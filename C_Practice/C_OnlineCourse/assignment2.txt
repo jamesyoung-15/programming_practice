@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main(void)
+{   
+    printf("An old silent pond \nA frog jumps into the pond— Splash!\nSilence again.\n");
+    return 0;
+}    
