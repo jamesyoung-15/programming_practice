@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "/opt/esp-idf/components/bootloader/subproject"
-  "/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/wifi/build/bootloader"
-  "/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/wifi/build/bootloader-prefix"
-  "/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/wifi/build/bootloader-prefix/tmp"
-  "/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/wifi/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/wifi/build/bootloader-prefix/src"
-  "/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/wifi/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/jamesyoung/Documents/Personal_Projects/programming/programming_practice/esp32/practice/wifi/build/bootloader"
+  "/home/jamesyoung/Documents/Personal_Projects/programming/programming_practice/esp32/practice/wifi/build/bootloader-prefix"
+  "/home/jamesyoung/Documents/Personal_Projects/programming/programming_practice/esp32/practice/wifi/build/bootloader-prefix/tmp"
+  "/home/jamesyoung/Documents/Personal_Projects/programming/programming_practice/esp32/practice/wifi/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/jamesyoung/Documents/Personal_Projects/programming/programming_practice/esp32/practice/wifi/build/bootloader-prefix/src"
+  "/home/jamesyoung/Documents/Personal_Projects/programming/programming_practice/esp32/practice/wifi/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/wifi/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/jamesyoung/Documents/Personal_Projects/programming/programming_practice/esp32/practice/wifi/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/wifi/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/jamesyoung/Documents/Personal_Projects/programming/programming_practice/esp32/practice/wifi/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
