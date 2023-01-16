@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="James Young">
+        <meta name="desciption" content="Practice HTML Website.">
+        <title>Practice Website</title>
+        <link rel="icon" href="../images/logo3.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <h1>HTML Practice</h1>
+        </header>
+        <hr>
+        <main>
+            <section id="practice_text">
+                <h2>Practice text</h2>
+                <p>This is a text. &lt; &copy; &gt; <em>italics</em> <strong>bold</strong> 
+                    <br> New line</p>
+                    <address>Adress Street, District, Country</address>
+                    <aside>
+                        <details>
+                            <summary>Open to see details</summary>
+                            <p>Opened details</p>
+                        </details>
+                    </aside>
+            </section>
+
+            <hr>
+
+            <section id="lists">
+                <h2>Practice lists</h2>
+                <p>Here is an ordered list: 
+                    <ol>
+                        <li>Item 1 </li>
+                        <li>Item 2 </li>
+                        <li>Item 1 </li>
+                        <li>Item 2 </li>
+                        <li>Item 1 </li>
+                        <li>Item 2 </li>
+                    </ol>
+                    Here is an unordered list:
+                    <ul>
+                        <li>Item</li>
+                        <li>Another item</li>
+                        <li>Another item</li>
+                        <li>Another item</li>
+                        <li>Another item</li>
+                    </ul>
+                    Description List:
+                    <dl>
+                        <dt>Item 1</dt>
+                        <dd>Some description</dd>
+                        <dt>Item 1</dt>
+                        <dd>Some description</dd>
+                    </dl>
+                </p>
+                <p>List of navigation links:</p>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#practice_text">Jump to practice text section</a>
+                        </li>
+                        <li>
+                            <a href="#links_images">Jump to links and images id</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section> 
+
+            <hr>
+
+            <section id="links_images">
+                <h2>Links and Images</h2>
+                <p>Links: </p>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=kUMe1FH4CHE" target="_blank">Tutorial Used Link</a>
+                        </li>
+                        <li>
+                            <a href="../css_practice/practice_css.html">Link to Another HTML File</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>Good image sources:</p>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://loremipsum.io/">Placeholder images</a>
+                        </li>
+                        <li>
+                            <a href="https://unsplash.com/">Licensed free photos unsplash</a>
+                        </li>
+                        <li>
+                            <a href="https://www.pexels.com/">Licesned free photos pexels</a>
+                        </li>
+                        <li>
+                            <a href="https://www.irfanview.com/">Edit/resize photos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>Images:</p>
+                <img src="logo3.png" alt="Random text" width="300" height="300"/>
+                <br>
+                <figure>
+                    <img src="https://images.pexels.com/photos/6633071/pexels-photo-6633071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="480" height="640" loading="lazy"/>
+                <figcaption>
+                    Some description of this image
+                </figcaption>
+                </figure>
+            </section>
+
+            <hr>
+
+            <section id="tables">
+                <table>
+                    <caption>My Table</caption>
+                    <thread>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thread>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                            </td>
+                            <td>
+                                Do something
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <time datetime="11:00">11am</time>-<time datetime="13:00">1pm</time>
+                            </td>
+                            <td>
+                                Do something else
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                Footer for this table that spans two columns.
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <hr>
+
+            <section id="forms_inputs">
+                <h2>Forms/Inputs</h2>
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Some form</legend>
+                        <p>
+                            <label for="firstName">First Name: </label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Jokic" required>
+                        </p>
+                        <p>
+                            <label for="phone">Phone number:</label>
+                            <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                        </p>
+                        <p>
+                            <label for="select">Select something</label>
+                            <select name="select" id="select">
+                                <optgroup label="optionGroup">
+                                    <option value="optionOne">Option 1</option>
+                                    <option value="optionTwo">Option 2</option>
+                                </optgroup>
+                                <optgroup label="optionGroup2">
+                                    <option value="optionFour">Option 3</option>
+                                    <option value="optionThree">Option 4</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                </form>
+                
+            </section>
+        </main>
+
+        <hr>
+
+        <footer>
+            <p>Footer. By James &copy;</p>
+        </footer>
+    </body>
+</html> 
