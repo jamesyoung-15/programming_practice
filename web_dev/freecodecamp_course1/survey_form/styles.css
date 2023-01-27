@@ -1,0 +1,18 @@
+body{
+    background-color: #1b1b32;
+    color: #f5f6f7;
+}
+form{
+    width: 100%;
+}
+header{
+    margin: auto;
+    text-align: center;
+}
+fieldset{
+    border: none;
+}
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
