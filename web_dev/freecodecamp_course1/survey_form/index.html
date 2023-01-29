@@ -9,35 +9,53 @@
 </head>
 <body>
     <header>
-        <h1 id="title">Survey Form</h1>
-        <p id="description">Please fill out this survey form.</p>
+        <h1 id="title">Get to Know You Form</h1>
+        <p id="description">Please tell us about yourself.</p>
     </header>
     <main>
         <form id="survey-form" method="post" action="">
             <fieldset>
+                <h2>Personal Info</h2>
                 <label id="name-label" for="input-name">Name
-                    <input required id="name" type="text" name="input-name">
+                    <input required id="name" type="text" name="input-name" placeholder="Name">
                 </label>
                 <label id="email-label" for="email">Email
-                    <input type="email" name="email" id="email">
+                    <input required type="email" name="email" id="email" placeholder="email@something.com">
                 </label>
-                <label id="number-label" for="number">Number
-                    <input type="number" name="number" id="number">
+                <h2>Personal Preferences</h2>
+                <label id="number-label" for="number">Favourite Number
+                    <input type="number" name="number" id="number" placeholder="0-9" min="0" max="9">
                 </label>
-                <label>Select
-                    <select name="" id="dropdown">
+                <label for="dropdown">What phone do you use:
+                    <select name="dropdown" id="dropdown">
                         <option value="">Please choose an option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
+                        <option value="1">Apple</option>
+                        <option value="2">Android</option>
+                        <option value="3">Linux</option>
+                        <option value="4">Others</option>
                     </select>
                 </label>
-                <label>Radio 1
-                    <input type="radio" name="" id="">
+                <p>Which do you prefer:</p>
+                <label for="dogs">
+                    <input type="radio" name="pets" id="dogs" class="inline" value="dogs"> Dogs
                 </label>
-                <label>Radio 2
-                    <input type="radio" name="" id="">
+                <label for="cats">
+                    <input type="radio" name="pets" id="cats" class="inline" value="cats"> Cats
                 </label>
+                <p>Please click on your favourite food from the list below:</p>
+                <label for="pizza">
+                    <input type="checkbox" name="food" id="pizza" class="inline" value="pizza"> Pizza
+                </label>
+                <label for="friedRice">
+                    <input type="checkbox" name="food" id="friedRice" class="inline" value="friedRice"> Fried Rice
+                </label>
+                <label for="friedNoodles">
+                    <input type="checkbox" name="food" id="friedNoodles" class="inline" value="friedNoodles"> Fried Noodles
+                </label>
+                <label for="textarea">Other info you would like us to know
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea></label>
             </fieldset>
+            <input type="submit" value="Submit" id="submit">
         </form>
     </main>
 </body>
