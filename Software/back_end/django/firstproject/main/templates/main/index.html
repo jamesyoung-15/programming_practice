@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+List Query
+
+{% endblock %}
+
+{% block content %}
+
+    <h2>{{ls.name}}</h2>
+    <form action="#" method="post">
+        <ul>
+            {% for item in ls.item_set.all %}
+                {% if item.complete == True %}
+                    <li>{{item.text}}</li>
+            {% endfor %}
+        </ul>
+        <button type="submit" name="save" value="save">Save</button>
+        <input type="text" name="item">
+        <button type="submit" name="newItem" value="newItem">Add Item</button>
+    </form>
+{% endblock %}
